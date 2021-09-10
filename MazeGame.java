@@ -7,7 +7,6 @@ import java.awt.geom.*;
 import javax.swing.JOptionPane;
 import java.util.Random;
 
-// https://www.youtube.com/watch?v=p9Y-NBg8eto
 public class MazeGame extends JPanel implements ActionListener, KeyListener {
 
   Timer t = new Timer(5, this); // every 5 milliseconds will call action listener
@@ -16,7 +15,7 @@ public class MazeGame extends JPanel implements ActionListener, KeyListener {
   double velx = 0;
   double vely = 0;
 
-  public MazeGame() { // constructor
+  public MazeGame() {
 
     t.start(); // start timer
     addKeyListener(this); // add the key listener
@@ -59,8 +58,6 @@ public class MazeGame extends JPanel implements ActionListener, KeyListener {
     Graphics2D alien = (Graphics2D) g;
     Graphics2D planet = (Graphics2D) g;
     Graphics2D stars = (Graphics2D) g;
-    //g2.setColor(Color.black);
-    //g2.fillRect(0, 0, 800, 600);
 
     setBackground(Color.black);
 
